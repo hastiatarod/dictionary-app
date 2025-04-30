@@ -8,7 +8,6 @@ function App() {
       <div className="container">
         <header>The Dictionary</header>
         <Dictionary />
-
       </div>
     </>
   )
