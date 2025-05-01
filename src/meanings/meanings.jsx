@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function Meanings({ meaning }) {
     return (
         <div>
@@ -9,6 +10,11 @@ export default function Meanings({ meaning }) {
             <div>
                 {meaning.definition}
             </div>
-        </div>
+            <div>
+                {meaning.synonyms?.join(", ")
+
+                }</div>
+
+        </div >
     )
 }
