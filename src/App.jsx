@@ -9,6 +9,7 @@ function App() {
         <header>The Dictionary</header>
         <Dictionary />
       </div>
+      <div>coded by Hasti</div>
     </>
   )
 }
