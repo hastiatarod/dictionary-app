@@ -8,8 +8,9 @@ function App() {
       <div className="container">
         <header>The Dictionary</header>
         <Dictionary />
+        <div>coded by Hasti</div>
       </div>
-      <div>coded by Hasti</div>
+
     </>
   )
 }
