@@ -13,7 +13,6 @@ export default function Dictionary() {
 
     function search(event) {
         event.preventDefault();
-        console.log(keyWord);
         let key = 'tb9bafb403447563b62afb93o4d8c0fd'
         let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyWord}&key=${key}`;
         axios.get(apiUrl).then(handleResponse);
@@ -25,10 +24,10 @@ export default function Dictionary() {
     }
 
     return (
-        <div>
+        <div className="d-flex flex-column align-items-center mt-5 mb-5" >
             <form action="" onSubmit={search}>
                 <input type="search" placeholder="Search for a word..." onChange={updateTheKeyWord} />
-                <button>🔍</button>
+                <button >🔍</button>
             </form>
             <Results results={results} />
         </div>

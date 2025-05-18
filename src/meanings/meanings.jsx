@@ -10,10 +10,8 @@ export default function Meanings({ meaning }) {
             <div>
                 {meaning.definition}
             </div>
-            <div>
-                {meaning.synonyms?.join(", ")
-
-                }</div>
+            <div className="mb-2">
+                {meaning.synonyms?.join(", ")}</div>
 
         </div >
     )
