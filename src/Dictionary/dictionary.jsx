@@ -25,7 +25,7 @@ export default function Dictionary() {
 
     return (
         <div className="d-flex flex-column align-items-center mt-5 mb-5" >
-            <form action="" onSubmit={search}>
+            <form className="mb-4" action="" onSubmit={search}>
                 <input type="search" placeholder="Search for a word..." onChange={updateTheKeyWord} />
                 <button >🔍</button>
             </form>

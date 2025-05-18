@@ -1,14 +1,14 @@
 import Dictionary from "./Dictionary/dictionary"
 import './App.css'
-
+import letterA from './assets/letter-a-text.svg'
 function App() {
 
   return (
     <>
-      <div className="container ">
+      <div className="container">
         <header>The Dictionary</header>
         <Dictionary />
-        <div>coded by Hasti</div>
+        <div className="text-center">coded by Hasti</div>
       </div>
 
     </>
