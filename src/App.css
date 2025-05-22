@@ -81,3 +81,10 @@ input.form-control:focus {
     background-position: 100% 50%;
   }
 }
+
+/**************/
+@media (max-width:425px) {
+  .custom-form {
+    width: 100% !important;
+  }
+}
