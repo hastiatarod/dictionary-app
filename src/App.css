@@ -37,3 +37,22 @@ header {
   font-weight: 500;
   font-size: 18px;
 }
+
+.custom-synooym {
+  border: 1px solid #C5CBE3;
+  border-radius: 20px;
+}
+
+.custom-form-btn {
+  border-color: #C5CBE3;
+  border-radius: 7px;
+  background-color: #2e8fff;
+  color: #FFFFFF;
+  padding-left: 9px;
+  padding-right: 9px;
+
+}
+
+.custom-form-input {
+  border-color: #2e8fff;
+}

@@ -9,11 +9,18 @@ export default function Meanings({ meaning }) {
             <div className="part-of-speech mb-2">
                 {meaning.partOfSpeech}
             </div>
-            <div className="definition mb-2 px-2">
+            <div className="definition mb-3 px-2">
                 {meaning.definition}
             </div>
             <div className="mb-2 px-2">
-                {meaning.synonyms?.join(", ")}</div>
+                {meaning.synonyms?.map((synonym, index) => (
+                    <span key={index}
+                        className="custom-synooym px-2 py-1 mb-1 me-1 d-inline-block">
+                        {synonym}
+                    </span>
+                )
+
+                )}</div>
 
         </div >
     )

@@ -10,7 +10,7 @@ export default function Results({ results }) {
             <div>
                 <div className="box-bg p-3 rounded-top box-shadow">
                     <h2>{results.word}</h2>
-                    <div className="phonetic">{results.phonetic}</div>
+                    <div className="phonetic fst-italic">{results.phonetic}</div>
                 </div>
 
                 {results.meanings.map(function (meaning, index) {

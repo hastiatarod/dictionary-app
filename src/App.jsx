@@ -5,10 +5,12 @@ function App() {
 
   return (
     <>
-      <div className="container">
-        <header>The Dictionary</header>
-        <Dictionary />
-        <div className="text-center">coded by Hasti</div>
+      <div className="container d-flex flex-column min-vh-100 mw-75">
+        <main className="flex-grow-1">
+          <header>The Dictionary</header>
+          <Dictionary defaultKeyword="dictionary" />
+        </main>
+        <footer className="text-center text-capitalize m-3">coded by Hasti</footer>
       </div>
 
     </>
