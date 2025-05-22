@@ -36,7 +36,9 @@ export default function Dictionary(probs) {
         return (
             <div className="d-flex flex-column align-items-center mt-5 mb-5" >
                 <form className="mb-4 d-flex w-50" action="" onSubmit={handleSubmit}>
-                    <input type="search" placeholder="Search for a word..." onChange={updateTheKeyWord} className="form-control custom-form-input" />
+                    <div className="animated-border-wrapper form-control">
+                        <input type="search" placeholder="Search for a word..." onChange={updateTheKeyWord} className="form-control border-0 no-focus-outline" />
+                    </div>
                     <button className="ms-2 custom-form-btn material-symbols-outlined">&#xe8b6;</button>
                 </form>
                 <Results results={results} />

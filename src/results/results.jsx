@@ -9,7 +9,7 @@ export default function Results({ results }) {
         return (
             <div>
                 <div className="box-bg p-3 rounded-top box-shadow">
-                    <h2>{results.word}</h2>
+                    <h2 className="text-capitalize">{results.word}</h2>
                     <div className="phonetic fst-italic">{results.phonetic}</div>
                 </div>
 

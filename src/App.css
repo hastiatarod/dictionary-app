@@ -53,6 +53,31 @@ header {
 
 }
 
-.custom-form-input {
-  border-color: #2e8fff;
+input.form-control {
+  padding: 6px;
+}
+
+input.form-control:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+  outline: none !important;
+}
+
+.animated-border-wrapper {
+  position: relative;
+  padding: 1px;
+  border-radius: 8px;
+  background: linear-gradient(270deg, #e24a97, #fcd48e, #4A90E2);
+  background-size: 600% 600%;
+  animation: borderMove 4s linear infinite;
+}
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
 }
