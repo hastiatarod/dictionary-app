@@ -3,7 +3,7 @@ import Meanings from "../meanings/meanings";
 import '../App.css'
 
 export default function Results({ results }) {
-    if (results) {
+    if (results && results.word) {
 
 
         return (
@@ -24,7 +24,9 @@ export default function Results({ results }) {
             </div>
         )
     }
-    else {
+    else if (results && results.message) {
+        return <div className="text-danger mt-4">Sorry, no definitions found. Please try another word.</div>;
+    } else {
         return null;
     }
 }

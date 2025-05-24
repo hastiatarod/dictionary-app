@@ -9,13 +9,16 @@ export default function Dictionary(probs) {
 
 
     function handleResponse(response) {
-        console.log(response.data);
+        console.log(response);
+
         setResults(response.data);
     }
     function search() {
         let key = 'tb9bafb403447563b62afb93o4d8c0fd'
         let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyWord}&key=${key}`;
-        axios.get(apiUrl).then(handleResponse);
+        axios.get(apiUrl).then(handleResponse).catch(() => {
+            setResults({ error: true })
+        });
 
     }
     function handleSubmit(event) {
