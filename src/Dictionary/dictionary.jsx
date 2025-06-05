@@ -6,8 +6,7 @@ export default function Dictionary(probs) {
     const [keyWord, setKeyWord] = useState(probs.defaultKeyword);
     const [results, setResults] = useState(null);
     const [loaded, setloaded] = useState(false);
-
-
+    const [photos, setPhotos] = useState(null);
 
     function handleResponse(response) {
         console.log(response);
