@@ -10,7 +10,7 @@ function App() {
           <header>The Dictionary</header>
           <Dictionary defaultKeyword="dictionary" />
         </main>
-        <footer className="text-center text-capitalize m-3">coded by Hasti</footer>
+        <footer className="text-center text-capitalize m-3">coded by Hasti🐾</footer>
       </div>
 
     </>

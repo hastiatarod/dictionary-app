@@ -8,10 +8,13 @@ export default function Dictionary(probs) {
     const [loaded, setloaded] = useState(false);
 
 
+
     function handleResponse(response) {
         console.log(response);
-
         setResults(response.data);
+    }
+    function handlePexelResponse(response) {
+        console.log(response);
     }
     function search() {
         let key = 'tb9bafb403447563b62afb93o4d8c0fd'
@@ -19,6 +22,8 @@ export default function Dictionary(probs) {
         axios.get(apiUrl).then(handleResponse).catch(() => {
             setResults({ error: true })
         });
+        let pexelsProxyUrl = `http://localhost:5000/api/photos?query=${keyWord}`;
+        axios.get(pexelsProxyUrl).then(handlePexelResponse);
 
     }
     function handleSubmit(event) {
