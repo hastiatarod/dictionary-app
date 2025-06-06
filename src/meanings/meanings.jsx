@@ -5,7 +5,7 @@ import '../App.css'
 
 export default function Meanings({ meaning }) {
     return (
-        <div className="box-bg p-3 mb-2 rounded-bottom box-shadow">
+        <div className="box-bg p-3 mb-2 rounded box-shadow">
             <div className="part-of-speech mb-2">
                 {meaning.partOfSpeech}
             </div>

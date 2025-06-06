@@ -14,6 +14,7 @@ export default function Dictionary(probs) {
     }
     function handlePexelResponse(response) {
         console.log(response);
+        setPhotos(response.data)
     }
     function search() {
         let key = 'tb9bafb403447563b62afb93o4d8c0fd'
@@ -48,7 +49,7 @@ export default function Dictionary(probs) {
                         <button className="custom-form-btn material-symbols-outlined">&#xe8b6;</button>
                     </div>
                 </form>
-                <Results results={results} />
+                <Results results={results} photos={photos} />
             </div>
         )
     } else {
