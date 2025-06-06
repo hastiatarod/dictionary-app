@@ -22,7 +22,7 @@ export default function Dictionary(probs) {
         axios.get(apiUrl).then(handleResponse).catch(() => {
             setResults({ error: true })
         });
-        let pexelsProxyUrl = `http://localhost:5000/api/photos?query=${keyWord}`;
+        let pexelsProxyUrl = `/.netlify/functions/pexels?query=${keyWord}`;
         axios.get(pexelsProxyUrl).then(handlePexelResponse);
 
     }
