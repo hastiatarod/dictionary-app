@@ -16,9 +16,29 @@ export default function Results({ results, photos }) {
                         </div>
                     </div>
                     <div className="box-bg p-3 rounded box-shadow">
-                        {photos && photos.map((photo, index) => (
-                            <img key={index} src={photo.src.medium} alt={photo.alt} width="100" className="rounded" />
-                        ))}
+                        {photos && photos.length > 0 && (
+                            <div id="photoCarousel" className="carousel slide" data-bs-ride="carousel">
+                                <div className="carousel-inner">
+                                    {photos.map((photo, index) => (
+                                        <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+                                            <img
+                                                src={photo.src.medium}
+                                                className="d-block w-100 rounded"
+                                                alt={photo.alt || "Photo"}
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+                                <button className="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Previous</span>
+                                </button>
+                                <button className="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        )}
                     </div>
                 </div>
 
