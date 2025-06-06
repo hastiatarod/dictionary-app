@@ -14,7 +14,7 @@ export default function Dictionary(probs) {
     }
     function handlePexelResponse(response) {
         console.log(response);
-        setPhotos(response.data)
+        setPhotos(response.data.photos)
     }
     function search() {
         let key = 'tb9bafb403447563b62afb93o4d8c0fd'

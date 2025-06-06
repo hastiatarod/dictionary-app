@@ -16,8 +16,9 @@ export default function Results({ results, photos }) {
                         </div>
                     </div>
                     <div className="box-bg p-3 rounded box-shadow">
-
-                        {photos}
+                        {photos && photos.map((photo, index) => (
+                            <img key={index} src={photo.src.medium} alt={photo.alt} width="100" className="rounded" />
+                        ))}
                     </div>
                 </div>
 
