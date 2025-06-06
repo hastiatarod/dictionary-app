@@ -17,9 +17,7 @@ export default function Results({ results, photos }) {
                     </div>
                     <div className="box-bg p-3 rounded box-shadow">
 
-                        {photos.photos[0]}
-
-
+                        {photos}
                     </div>
                 </div>
 
