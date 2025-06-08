@@ -30,12 +30,12 @@ export default function Results({ results, photos }) {
                                     ))}
                                 </div>
                                 <button className="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
-                                    <span className="carousel-control-prev-icon bg-light rounded-circle p-2
+                                    <span className="carousel-control-prev-icon bg-primary rounded-circle p-2
 " aria-hidden="true"></span>
                                     <span className="visually-hidden">Previous</span>
                                 </button>
                                 <button className="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
-                                    <span className="carousel-control-next-icon bg-light rounded-circle p-2 .text-primary" aria-hidden="true"></span>
+                                    <span className="carousel-control-next-icon bg-primary rounded-circle p-2" aria-hidden="true"></span>
                                     <span className="visually-hidden">Next</span>
                                 </button>
                             </div>
