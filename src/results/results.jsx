@@ -8,7 +8,7 @@ export default function Results({ results, photos }) {
 
         return (
             <div className="results-container">
-                <div className="d-flex mb-2 justify-content-center gap-2">
+                <div className="d-flex mb-2 justify-content-center gap-2 flex-wrap">
                     <div className="result-box-word">
                         <div className="box-bg p-3 rounded box-shadow content">
                             <h2 className="text-capitalize">{results.word}</h2>
