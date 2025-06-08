@@ -96,6 +96,8 @@ input.form-control:focus {
 .carousel-item img {
   height: 50px;
   object-fit: cover;
+  margin: 0 auto;
+  width: 260px !important;
 }
 
 /**************/

@@ -23,7 +23,7 @@ export default function Results({ results, photos }) {
                                         <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
                                             <img
                                                 src={photo.src.medium}
-                                                className="d-block w-100 rounded"
+                                                className="d-block rounded"
                                                 alt={photo.alt || "Photo"}
                                             />
                                         </div>
