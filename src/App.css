@@ -112,6 +112,11 @@ input.form-control:focus {
   height: 157.7px;
 }
 
+.results-container {
+  min-width: 60%;
+  max-width: 70%;
+}
+
 /**************/
 @media (max-width:425px) {
   .custom-form {
