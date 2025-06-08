@@ -10,7 +10,7 @@ export default function Results({ results, photos }) {
             <div >
                 <div className="d-flex mb-2 justify-content-center gap-2">
                     <div className="result-box-word">
-                        <div className="box-bg p-3 rounded box-shadow">
+                        <div className="box-bg p-3 rounded box-shadow content">
                             <h2 className="text-capitalize">{results.word}</h2>
                             <div className="phonetic fst-italic">{results.phonetic}</div>
                         </div>

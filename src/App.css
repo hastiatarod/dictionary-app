@@ -94,7 +94,7 @@ input.form-control:focus {
 }
 
 .carousel-item img {
-  height: 130px;
+  height: 140px;
   object-fit: cover;
   margin: 0 auto;
   width: 220px !important;
@@ -106,6 +106,10 @@ input.form-control:focus {
 
 .result-box-img {
   flex: 2;
+}
+
+.result-box-word .custom {
+  height: 157.7px;
 }
 
 /**************/
