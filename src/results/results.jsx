@@ -8,14 +8,14 @@ export default function Results({ results, photos }) {
 
         return (
             <div >
-                <div className="d-flex mb-2">
-                    <div className="">
-                        <div className="box-bg p-3 rounded box-shadow">
+                <div className="d-flex mb-2 justify-content-center gap-2">
+                    <div className="result-box-word">
+                        <div className="box-bg p-2 rounded box-shadow">
                             <h2 className="text-capitalize">{results.word}</h2>
                             <div className="phonetic fst-italic">{results.phonetic}</div>
                         </div>
                     </div>
-                    <div className="box-bg p-3 rounded box-shadow">
+                    <div className="box-bg p-3 rounded box-shadow result-box-img">
                         {photos && photos.length > 0 && (
                             <div id="photoCarousel" className="carousel slide" data-bs-ride="carousel">
                                 <div className="carousel-inner">
