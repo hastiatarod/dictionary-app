@@ -35,7 +35,7 @@ export default function Results({ results, photos }) {
                                     <span className="visually-hidden">Previous</span>
                                 </button>
                                 <button className="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
-                                    <span className="carousel-control-next-icon bg-light rounded-circle p-2" aria-hidden="true"></span>
+                                    <span className="carousel-control-next-icon bg-light rounded-circle p-2 .text-primary" aria-hidden="true"></span>
                                     <span className="visually-hidden">Next</span>
                                 </button>
                             </div>
