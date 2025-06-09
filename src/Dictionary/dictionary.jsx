@@ -42,7 +42,7 @@ export default function Dictionary(probs) {
 
     if (loaded) {
         return (
-            <div className="d-flex flex-column align-items-center mt-5 mb-5" >
+            <div className="d-flex flex-column align-items-center mt-3 mb-5" >
                 <form className="custom-form mb-4 d-flex w-50" action="" onSubmit={handleSubmit}>
                     <div className="animated-border-wrapper form-control d-flex">
                         <input type="search" placeholder="Search for a word..." onChange={updateTheKeyWord} className="form-control border-0 no-focus-outline" />
